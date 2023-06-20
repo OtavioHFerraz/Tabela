@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css" id="LinkEstilos">.
+
+</head>
+
+<body>
+
+    <table class="table">
+
+        <tr>
+
+            <th>ID do funcionário</th>
+            <th>Nome do funcionário</th>
+            <th>Cargo</th>
+            <Th>Empresa</Th>
+            <th>Email</th>
+            <th>Possui crachá</th>
+
+        </tr>
+
+        <tr>
+
+            <td>959814874</td>
+            <td>Achim Puchert</td>
+            <td>Ceo</td>
+            <td>Mercedes</td>
+            <td>Achimpuchert@gmail.com</td>
+            <td>Sim</td>
+
+        </tr>
+
+        <tr>
+
+            <td>951176763</td>
+            <td>Lewis Hamilton</td>
+            <td>Piloto</td>
+            <td>Mercedes</td>
+            <td>Hamilton@gmail.com</td>
+            <td>Sim</td>
+
+        </tr>
+
+        <tr>
+
+            <td>984863508</td>
+            <td>George Russell</td>
+            <td>Piloto</td>
+            <td>Mercedes</td>
+            <td>Russell@gmail.com</td>
+            <td>Sim</td>
+
+        </tr>
+
+        <tr>
+
+            <td>985254303</td>
+            <td>Fernando Cruz</td>
+            <td>Mecânico</td>
+            <td>Mercedes</td>
+            <td>Fernandocruz@gmail.com</td>
+            <td>Sim</td>
+
+        </tr>
+
+    </table>
+
+    button type="button" id="botaoEstilos" >Remover estilos</button>
+
+    <script>
+
+        function removeEstilos() {
+
+            const LinkEstilos = document.querySelector ('#linkEstilos');
+
+            if (LinkEstilos.hasAttribute('disabled')) {
+                LinkEstilos.removeAttribute ('disabled');
+                botao.innerHTML = 'Remover Estilos'
+
+            } else {
+                LinkEstilos.setAttribute ('disabled','');
+                botao.innerHTML = 'Aplicar Estilos'
+            }
+
+            LinkEstilos.setAttribute('disabled','')
+        }
+
+        const botao = document.querySelector ('#botaoEstilos');
+        botao.addEventListener('click', removeEstilos); 
+        
+        
+        //botao.innerHTML = 'NOVO TEXTO'
+
+    </script>
+      
+</body>
+</html>
